@@ -1,0 +1,53 @@
+<view class="container diy-loadGoods">
+<view class="diy-loadGoods-title" wx:if="{{list.data.length > 0}}">
+
+  </view>
+  <view class="list-header">
+    <!-- 商品列表 -->
+    <view   wx:if="{{list.data.length > 0}}">
+      <view class="new">
+        <view class="category-list {{ showView ? 'arrange' : '' }}">
+          <navigator class="list b-f" hover-class="none" url="../goods/index?goods_id={{item.goods_id}}" wx:for="{{list.data}}" wx:key="list">
+            <view class="left">
+              <view class="img">
+                <image class="goodsImg" mode="scaleToFill" src="{{ item.goods_image }}"></image>
+              </view>
+            </view>
+            <view class="right">
+              <view class="cont">
+                <!-- 商品名称 -->
+                <text class="title f-29 twolist-hidden">{{item.goods_name}}</text>
+                <block wx:if="{{ showView }}">
+                  <!-- 商品卖点 -->
+                  <view class="selling_point onelist-hidden">
+                    <text>{{ item.selling_point }}</text>
+                  </view>
+                  <!-- 商品销量 -->
+                  <view class="goods_sales dis-flex">
+                    <text class="onelist-hidden">已售{{ item.goods_sales }}件</text>
+                  </view>
+                </block>
+                <!-- 商品价格 -->
+                <view class="detail-price onelist-hidden">
+                  <text class="goods-price f-30 col-m">￥{{item.goods_sku.goods_price}}</text>
+                  <text class="line-price col-9 f-24" wx:if="{{item.goods_sku.line_price>0}}">{{item.goods_sku.line_price}}</text>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+      <view wx:if="{{ no_more }}" class="no-more f-30">亲, 没有更多了</view>
+      <view wx:else class="no-more f-30">加载中...</view>
+    </view>
+  </view>
+
+  <!-- 无数据 -->
+  <view wx:if="{{ !isLoading && !list.data.length }}" class="yoshop-notcont" style="margin-top:130px;">
+    <view class="img">
+      <image mode="aspectFit" src="../../images/no_content.png"></image>
+    </view>
+    <text class="cont">亲, 没有相关内容</text>
+  </view>
+
+</view>

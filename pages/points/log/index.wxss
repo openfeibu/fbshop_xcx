@@ -1,0 +1,36 @@
+page, .container {
+  background: #fff;
+}
+
+.recharge-order {
+  padding: 0;
+}
+
+.order-item {
+  font-size: 28rpx;
+  padding: 20rpx 20rpx;
+  line-height: 1.8;
+  border-bottom: 1rpx solid #f9f9f9;
+}
+
+.rec-status {
+  color: #333;
+}
+
+.order-item .rec-time {
+  color: rgb(160, 160, 160);
+  font-size: 26rpx;
+}
+.points-header{
+  height: 140rpx;
+  background: url(http://images.feibu.info/lcsc/bg.png) no-repeat center top/100% auto;
+  line-height: 140rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-radius: 0 0 20rpx 20rpx;
+}
+.points-header text{font-size: 60rpx;margin:0 10rpx;}
+.points-title{text-align: center;line-height: 80rpx;border-bottom:1rpx solid #eee;font-size: 28rpx;}
+.item-right{font-size: 42rpx;font-weight: bold;}

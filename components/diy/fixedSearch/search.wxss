@@ -1,0 +1,38 @@
+
+/* 搜索框 */
+
+.lc-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:#d61314 url("http://images.feibu.info/lcsc/home-top-1.png") no-repeat center bottom/100% auto;
+  font-size: 26rpx;
+  z-index: 999;
+}
+.lc-header .lc-header-relative{position: relative;padding: 0 20rpx;}
+.lc-header .lc-header-relative form{position: absolute;bottom: 20rpx;width: 68%;}
+.lc-header .inner {
+  height: 60rpx;
+  width: 100%;
+  bottom:0;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+
+.lc-header .inner.radius {
+  border-radius: 10rpx;
+}
+
+.lc-header .inner.round {
+  border-radius: 60rpx;
+}
+
+.lc-header .inner .search-input {
+  height: 60rpx;
+  /* width: 100%; */
+  line-height: 60rpx;
+  color: #999;
+  padding: 0 20rpx;
+}

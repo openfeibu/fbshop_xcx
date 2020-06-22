@@ -1,0 +1,15 @@
+<!-- 搜索框 -->
+<view class="lc-header" style="height:{{ topHeight }}px">
+  <view class="lc-header-relative" style="height:{{ topHeight }}px">
+    <form bindsubmit="onTargetSearch" report-submit="true">
+      <button formType="submit" class="btn-normal">
+        <view class="inner {{ itemStyle.searchStyle }}">
+          <view class="search-input" style="text-align:left">
+            <text class="search-icon iconfont icon-sousuo"></text>
+            <text>输入关键词进行搜索</text>
+          </view>
+        </view>
+      </button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,126 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.4",
+	"appid": "wx361a9bc8120dc069",
+	"projectname": "%E9%A3%9E%E6%AD%A5%E7%94%B5%E5%95%86",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/user/index",
+					"pathName": "pages/user/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goods/index",
+					"pathName": "pages/goods/index",
+					"query": "goods_id=10007",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/sharp/goods/index",
+					"pathName": "pages/sharp/goods/index",
+					"query": "active_time_id=10110&sharp_goods_id=10005",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sharing/goods/index",
+					"pathName": "pages/sharing/goods/index",
+					"query": "goods_id=10003",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sharing/active/index",
+					"pathName": "pages/sharing/active/index",
+					"query": "active_id=10002",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/flow/index",
+					"pathName": "pages/flow/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/index",
+					"pathName": "pages/order/index",
+					"query": "type=all",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/order/detail",
+					"pathName": "pages/order/detail",
+					"query": "order_id=10003",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bargain/goods/index",
+					"pathName": "pages/bargain/goods/index",
+					"query": "active_id=10002",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/points/log/index",
+					"pathName": "pages/points/log/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

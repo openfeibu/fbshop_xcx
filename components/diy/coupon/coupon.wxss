@@ -1,0 +1,131 @@
+/* common.wxss */
+
+/* @import "/utils/common.wxss"; */
+
+.diy-coupon {
+  white-space: nowrap;
+  font-size: 0;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+  height: 120rpx;
+}
+.diy-coupon-title{
+  float: left;
+  width: 130rpx;
+  height: 120rpx;
+  background: url(http://images.feibu.info/lcsc/xsqj.png) no-repeat 20rpx center/80rpx auto;
+}
+.scroll-view{
+  float: left;
+  width: 560rpx;
+}
+.diy-coupon .coupon-item {
+  width: 220rpx;
+  height: 120rpx;
+  position: relative;
+  color: #222;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+
+.diy-coupon .coupon-item .before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 20rpx;
+  height: 20rpx;
+  top: 0rpx;
+  left: 160rpx;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 80%;
+  border-radius: 80%;
+  background-color: #fff;
+}
+.diy-coupon .coupon-item .after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 20rpx;
+  height: 20rpx;
+  bottom: -20rpx;
+  left: 160rpx;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 80%;
+  border-radius: 80%;
+  background-color: #fff;
+}
+.diy-coupon .coupon-item:after {
+  content: "";
+  position: absolute;
+  width: 1rpx;
+  height: 80rpx;
+  top: 50%;
+  margin-top: -40rpx;
+  left: 170rpx;
+  border-right: 4rpx dashed   #f4baad;
+
+}
+
+.diy-coupon .coupon-wrapper {
+  display: inline-block;
+  padding: 0 12rpx;
+}
+
+.diy-coupon .coupon-item .left-content {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  /* background-color: #e5004f; */
+  float: left;
+}
+
+.diy-coupon .coupon-item .left-content .content-top .price {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.diy-coupon .coupon-item.color__blue .left-content {
+  background: linear-gradient(-125deg, #57bdbf, #2f9de2);
+}
+
+.diy-coupon .coupon-item.color__red .left-content {
+  background: linear-gradient(-128deg, #ff6d6d, #ff3636);
+}
+
+.diy-coupon .coupon-item.color__violet .left-content {
+  background: linear-gradient(-113deg, #ef86ff, #b66ff5);
+}
+
+.diy-coupon .coupon-item.color__yellow .left-content {
+  background: linear-gradient(-141deg, #f7d059, #fdb054);
+}
+
+.diy-coupon .coupon-item.color__gray {
+  background: linear-gradient(-113deg, #bdbdbd, #eaeaea);
+  color:#8c8c8c;
+}
+.diy-coupon .coupon-item.color__lc {
+  background: linear-gradient(-113deg, #f9e0dc, #f6c7c0);
+}
+
+/* .diy-coupon .coupon-item.color__gray .right-receive {
+  background-color: #949494;
+} */
+
+.diy-coupon .coupon-item .right-receive {
+  width: 20%;
+  height: 100%;
+  /* background-color: #4e4e4e; */
+  text-align: center;
+  float: right;
+  color: #eb502a;
+  writing-mode:vertical-lr;
+
+}
+
+.diy-coupon .coupon-item .right-receive {
+  font-size: 26rpx;
+}

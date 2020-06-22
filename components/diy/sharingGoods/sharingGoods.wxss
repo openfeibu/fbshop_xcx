@@ -1,0 +1,127 @@
+/* common.wxss */
+/* @import "/utils/common.wxss"; */
+
+/* 商品组 */
+
+.diy-sharingGoods {
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.diy-sharingGoods-title{
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+  background:#fff  url(http://images.feibu.info/lcsc/pt.png) no-repeat 20rpx center / auto 40rpx;
+
+}
+.diy-sharingGoods-title .more{
+  float: right;
+  color: #616161;
+  font-size: 28rpx;
+}
+.goods-item {
+  height: auto;
+  border-bottom: 1rpx solid #e8e8e8;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.goods-item:last-child{
+  border:none;
+}
+.goods-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 商品图片 */
+
+.goods-item_left {
+  display: flex;
+  width: 40%;
+  background: #fff;
+  align-items: center;
+}
+
+.goods-item_left .image {
+  display: block;
+  width: 240rpx;
+  height: 240rpx;
+}
+
+.goods-item_right {
+  position: relative;
+  width: 60%;
+}
+
+/* 商品名称 */
+
+.goods-item_right .goods-item_title {
+  height: 72rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  line-height: 1.3;
+  color: #333;
+  font-weight: bold;
+}
+
+.goods-item_desc {
+  margin-top: 16rpx;
+}
+
+/* 商品卖点 */
+
+.desc-selling_point {
+  width: 400rpx;
+  /* height: 40rpx; */
+  font-size: 24rpx;
+  line-height: 1.4;
+  color: #ff5828;
+}
+
+/* 拼团信息 */
+
+.desc-situation {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  line-height: 1.3;
+  color: rgb(240, 60, 60);
+}
+
+.desc-situation .people {
+  margin: 0 12rpx;
+}
+
+/* 商品价格 */
+
+.desc_footer {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+}
+
+.desc_footer .price_x {
+  margin-right: 16rpx;
+  color: #ff5828;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.desc_footer .price_y {
+  text-decoration: line-through;
+}
+
+/* 去拼团按钮 */
+
+.goods-item .btn-settlement {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 28rpx;
+  border-radius: 40rpx;
+  background: linear-gradient(to right, rgb(235, 53, 107) 0%, #ff5828 100%);
+  box-shadow: 0 4rpx 20rpx -4rpx #ff5828;
+  font-size: 28rpx;
+  line-height: 54rpx;
+  text-align: center;
+  color: #fff;
+}
